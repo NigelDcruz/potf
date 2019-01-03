@@ -1,0 +1,64 @@
+//  sass --watch style.scss:style.css --style compressed
+
+@import './libraries/bootstrap.min.scss';
+@import './libraries/swiper.min.scss';
+@import './extends/extends.scss';
+@import 'navigation.scss';
+
+body{
+    color: #000;
+}
+
+//Reset
+a{
+    text-decoration: none;
+    &::hover{
+        text-decoration: none;
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section{
+    height: 100vh;
+}
+
+//Navigation Code
+@import 'navigation.scss';
+//Navigation Code Ends
+
+#main{
+    margin-top: 30px; 
+}
+
+// Images
+#i1{
+
+    background-image: url('https://picsum.photos/1200/600/?cat');
+    @extend .img-cover;
+}
+#i2{
+
+    background-image: url('https://picsum.photos/1200/600/?wedding');
+    @extend .img-cover;
+}
+#i3{
+
+    background-image: url('https://picsum.photos/1200/600/?dance');
+    @extend .img-cover;
+}
+#i4{
+
+    background-image: url('https://picsum.photos/1200/600/?summer');
+    @extend .img-cover;
+}
+#i5{
+
+    background-image: url('https://picsum.photos/1200/600/?moon');
+    @extend .img-cover;
+}
+// Images Ends
